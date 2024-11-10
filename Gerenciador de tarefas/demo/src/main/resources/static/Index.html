@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organizador de Tarefas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        .task-list {
+            margin-top: 20px;
+        }
+
+        .task {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .task button {
+            padding: 5px 10px;
+            margin-left: 5px;
+            cursor: pointer;
+        }
+
+        .incomplete {
+            font-weight: bold;
+        }
+        .completed {
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+<body>
+    <h1>Organizador de Tarefas</h1>
+
+    <input type="text" id="taskInput" placeholder="Digite uma nova tarefa" />
+    <button onclick="addTask()">Adicionar Tarefa</button>
+
+    <div class="task-list" id="taskList">
+        <!-- Tarefas serão carregadas aqui -->
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
