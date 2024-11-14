@@ -1,0 +1,100 @@
+/* Estilos para o organizador de tarefas */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.task-input {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+#taskInput {
+    width: 70%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    padding: 8px 12px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#taskList {
+    margin-top: 20px;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+    justify-content: space-between;
+}
+
+.task.completed {
+    background-color: #d3ffd3;
+}
+
+.task.incomplete {
+    background-color: #f9f9f9;
+}
+
+button {
+    margin-left: 10px;
+}
+
+button.remove {
+    background-color: #f44336;
+}
+
+button.remove:hover {
+    background-color: #e53935;
+}
+
+/* Estilos para o status da tarefa */
+.status {
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+/* Estilos para as tarefas completas */
+.task.completed .status {
+    color: green;  /* Tarefas completas ficam verdes */
+}
+
+/* Estilos para as tarefas pendentes */
+.task.incomplete .status {
+    color: orange;  /* Tarefas pendentes ficam laranja */
+}
